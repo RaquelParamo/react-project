@@ -1,0 +1,63 @@
+@mixin card-shadow {
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.UserCard {
+  &__card {
+    height: 300px;
+    //display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 0.8em;
+    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    white-space: nowrap;
+    //cursor: pointer;
+    margin: 0;
+    width: 20%;
+    color: black;
+    text-decoration: none;
+    transition: all 200ms ease-in;
+    text-align: center;
+
+    &:hover {
+      //@include card-shadow;
+      transform: scale(1.02);
+      color: white;
+      background-color: black;
+      
+    }
+    &-types {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    h3,
+    h4 {
+      margin: 0.5rem;
+    }
+
+    .Content {
+      height: 70%;
+      background-color: grey;
+      display: block;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-decoration: none;
+    }
+
+    .cardimg {
+    object-fit: fill;
+    object-position: center center;
+      filter: grayscale(100%);
+    }
+
+    .cardimg:hover{
+      filter: brightness(100%);
+    }
+
+ 
+  }
+}

@@ -1,0 +1,36 @@
+.banner {
+    background-color: black;
+    text-align: center;
+    color:white;
+    margin-top: 30px;
+    font-size: 30px;
+    width: 100%;
+    padding-left:0px;
+
+}
+button {
+    background-color: black;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #e30052;
+    font-size: 30px;
+    margin-bottom:10px;
+    border-color: white;
+    border-width: 0.5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #e30052;
+    cursor:move;
+    
+}
+
+button span {
+    color:white;
+}
+
+button span:hover {
+    color: black;
+}
+
